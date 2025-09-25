@@ -1,0 +1,159 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-09-25T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2025.0.0",
+  "resources": [
+    {
+      "_id": "wrk_1",
+      "created": 0,
+      "description": "Projeto 3º Bimestre - Testes de rotas",
+      "modified": 0,
+      "name": "Projeto 3Bimestre",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_1",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:3000"
+      },
+      "_type": "environment"
+    },
+    {
+      "_id": "req_get_stores_id",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/stores/1",
+      "name": "GET /stores/:id",
+      "description": "Retorna loja, dono e produtos",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_stores",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/stores",
+      "name": "POST /stores",
+      "description": "Cria uma loja",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Loja Teste\",\n  \"userId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_stores_id",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/stores/1",
+      "name": "PUT /stores/:id",
+      "description": "Atualiza uma loja",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Loja Atualizada\",\n  \"userId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "req_delete_stores_id",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/stores/1",
+      "name": "DELETE /stores/:id",
+      "description": "Remove uma loja",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "_type": "request"
+    },
+    {
+      "_id": "req_get_products",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/products",
+      "name": "GET /products",
+      "description": "Lista produtos, loja e dono da loja",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_products",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/products",
+      "name": "POST /products",
+      "description": "Cria um produto",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Produto Teste\",\n  \"price\": 10.99,\n  \"storeId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_products_id",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/products/1",
+      "name": "PUT /products/:id",
+      "description": "Atualiza um produto",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Produto Atualizado\",\n  \"price\": 20.99,\n  \"storeId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "req_delete_products_id",
+      "parentId": "wrk_1",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/products/1",
+      "name": "DELETE /products/:id",
+      "description": "Remove um produto",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "_type": "request"
+    }
+  ]
+}
